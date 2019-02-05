@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Artisan</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="icon" href="./favicon.ico">
+</head>
+<body>
+  <section class="sectionprincipal">
+    <div class="container">
+      <div >
+        <img src="./assets/img/logo.png" class="imglogo" alt="Artisan">
+      </div>
+      <!-- All of the Node.js APIs are available in this renderer process. -->
+      <div class="login">
+        <h1 class="titulos">Bienvenido a Artisan</h1>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Correo electronico</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p class="footerinformation">Desarrollado por <a href="https://codwelt.com/" target="_blank"><img src="./assets/img/creditos.png" alt="codwelt" class="logofooter"></a></p>
+    <p class="footerinformation">Chromium <script>document.write(process.versions.chrome)</script>, Electron <script>document.write(process.versions.electron)</script>.</p>
+  </footer>
+  <script>
+  // You can also require other files to run in this process
+  require('./renderer.js')
+  </script>
+  <script src="./assets/js/jquery.js" charset="utf-8"></script>
+  <script src="./assets/js/bootstrap.js" charset="utf-8"></script>
+
+
+</body>
+</html>

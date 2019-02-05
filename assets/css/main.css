@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+.headercontainer{
+  padding: 3%;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.imglogo{
+  width: 10%;
+  display: block;
+  margin:auto;
+}
+
+.sectionprincipal{
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  align-content: center;
+}
+.login{
+width: 50%;
+height: 100%;
+display: block;
+margin: auto;
+}
+
+.titulos{
+  text-align: center;
+}
+
+.footerinformation{
+  text-align: center;
+  font-size: 80%;
+  color: rgba(0,0,0,.5);
+}
+
+.logofooter{
+  width:3%;
+  margin-top: -1%;
+}
