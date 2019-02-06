@@ -19,25 +19,26 @@
         <form>
           <div class="form-group">
             <label for="exampleInputEmail1">Correo electronico</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo">
+            <input type="email" class="form-control" id="user" aria-describedby="emailHelp" placeholder="Correo">
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+            <input type="password" class="form-control" id="password" placeholder="Contraseña">
           </div>
-          <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+          <button type="submit" class="btn btn-primary btn-block" id="login">Entrar</button>
         </form>
       </div>
     </div>
   </section>
   <footer>
     <p class="footerinformation">Desarrollado por <a href="https://codwelt.com/" target="_blank"><img src="./assets/img/creditos.png" alt="codwelt" class="logofooter"></a></p>
-    <p class="footerinformation">Chromium <script>document.write(process.versions.chrome)</script>, Electron <script>document.write(process.versions.electron)</script>.</p>
+    <!--<p class="footerinformation">Chromium <script>document.write(process.versions.chrome)</script>, Electron <script>document.write(process.versions.electron)</script>.</p>-->
   </footer>
   <script>
   // You can also require other files to run in this process
-  require('./renderer.js')
+//  require('./renderer.js')
   </script>
+  <script src="./system/app.js" charset="utf-8"></script>
   <script src="./assets/js/jquery.js" charset="utf-8"></script>
   <script src="./assets/js/bootstrap.js" charset="utf-8"></script>
 
