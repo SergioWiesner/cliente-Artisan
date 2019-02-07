@@ -15,7 +15,7 @@
       </div>
       <!-- All of the Node.js APIs are available in this renderer process. -->
       <div class="login">
-        <h1 class="titulos">Bienvenido a Artisan</h1>
+        <h1 class="titulos">Bienvenido a <span class="nombretienda"></span></h1>
         <form>
           <div class="form-group">
             <label for="exampleInputEmail1">Correo electronico</label>
@@ -35,9 +35,14 @@
     <!--<p class="footerinformation">Chromium <script>document.write(process.versions.chrome)</script>, Electron <script>document.write(process.versions.electron)</script>.</p>-->
   </footer>
   <script>
+    if(localStorage.getItem('tocken')){
+      location.href ="./system/pages/home.html";
+    }
   // You can also require other files to run in this process
 //  require('./renderer.js')
   </script>
+
+
   <script src="./system/app.js" charset="utf-8"></script>
   <script src="./assets/js/jquery.js" charset="utf-8"></script>
   <script src="./assets/js/bootstrap.js" charset="utf-8"></script>
